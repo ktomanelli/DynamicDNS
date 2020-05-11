@@ -1,0 +1,62 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    async (1.26.0)
+      console (~> 1.0)
+      nio4r (~> 2.3)
+      timers (~> 4.1)
+    async-http (0.52.3)
+      async (~> 1.25)
+      async-io (~> 1.28)
+      async-pool (~> 0.2)
+      protocol-http (~> 0.20.0)
+      protocol-http1 (~> 0.13.0)
+      protocol-http2 (~> 0.14.0)
+    async-io (1.29.0)
+      async (~> 1.14)
+    async-pool (0.3.1)
+      async (~> 1.25)
+    async-rest (0.10.1)
+      async-http (~> 0.42)
+      protocol-http (~> 0.7)
+    cloudflare (4.2.0)
+      async-rest (~> 0.10.0)
+    console (1.8.2)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.7.5)
+    http-accept (1.7.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    mime-types (3.3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2020.0425)
+    netrc (0.11.0)
+    nio4r (2.5.2)
+    protocol-hpack (1.4.2)
+    protocol-http (0.20.0)
+    protocol-http1 (0.13.0)
+      protocol-http (~> 0.19)
+    protocol-http2 (0.14.0)
+      protocol-hpack (~> 1.4)
+      protocol-http (~> 0.18)
+    rest-client (2.1.0)
+      http-accept (>= 1.7.0, < 2.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
+    timers (4.3.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cloudflare (~> 4.2)
+  dotenv
+  rest-client
+
+BUNDLED WITH
+   2.1.4
